@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return 'HELLOOO /N CHAL RAHA HAI BHAI API!'
+    return 'HELLOOO /n Working'
 @app.route('/api/products' , methods=['GET', 'POST'])
 def products():
     return make_response(jsonify({"products" : db}),200)
