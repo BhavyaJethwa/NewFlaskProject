@@ -44,10 +44,10 @@ stages {
             steps {
                 script{
                 if(isUnix()){
-                sh "docker build -t bhavyadocker11/newflaskapp  ."
+                sh "docker build -t bhavyadocker11/newflaskappjenkins  ."
                 }
                 else{
-                 bat "docker build -t bhavyadocker11/newflaskapp ."
+                 bat "docker build -t bhavyadocker11/newflaskappjenkins ."
                  }
                  }
 
