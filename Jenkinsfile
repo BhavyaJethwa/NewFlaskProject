@@ -59,6 +59,7 @@ stages {
                 bat "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
                 bat "docker push bhavyadocker11/newflaskappjenkins:latest"
                 }
+    }
     stage('Kubernetes Pod') {
 
     steps {
