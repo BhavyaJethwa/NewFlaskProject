@@ -40,5 +40,18 @@ stages {
         }
 
     }
+    stage('Docker Build') {
+            steps {
+                script{
+                if(isUnix()){
+                sh "docker build -t bhavyadocker11/newflaskapp  ."
+                }
+                else{
+                 bat "docker build -t bhavyadocker11/newflaskapp ."
+                 }
+                 }
+
+            }
+        }
 }
 }
