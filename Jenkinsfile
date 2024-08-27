@@ -69,9 +69,9 @@ stages {
                 script{
  if (isUnix()){
 
- sh "kubectl apply -f deployment.yaml"
+ sh "kubectl apply -f deployment.yaml --validate=false"
  } else {
- bat("kubectl apply -f deployment.yaml")
+ bat("kubectl apply -f deployment.yaml --validate=false")
  }
                 }
     }
